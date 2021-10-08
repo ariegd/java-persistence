@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.hierarchystrategy.singletableperclass_InheritanceApp_jar_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.hierarchystrategy.singletableperclass.Item</class>
+    <class>com.hierarchystrategy.singletableperclass.Book</class>
+    <class>com.hierarchystrategy.singletableperclass.CD</class>
+    <class>com.strategy.joinedsubclass.Cd1</class>
+    <class>com.strategy.joinedsubclass.Book1</class>
+    <class>com.strategy.joinedsubclass.Item1</class>
+    <class>com.strategy.joinedsubclass.PartTimeEmp</class>
+    <class>com.strategy.joinedsubclass.Employee</class>
+    <class>com.strategy.joinedsubclass.FullTimeEmp</class>
+    <class>com.strategy.tableperconcreteclass.Cd2</class>
+    <class>com.strategy.tableperconcreteclass.Book2</class>
+    <class>com.strategy.tableperconcreteclass.Item2</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/ItemDB"/>
+      <property name="javax.persistence.jdbc.user" value="zodd"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.password" value="zodd"/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
